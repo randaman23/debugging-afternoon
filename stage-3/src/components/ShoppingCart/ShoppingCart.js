@@ -36,5 +36,5 @@ function mapStateToProps(state) {
         shoppingCart: state.shoppingCart
     };
 }
-
-export default connect(mapStateToProps)(ShoppingCart);
+const outputActions={removeFromShoppingCart}
+export default connect(mapStateToProps, outputActions)(ShoppingCart);
